@@ -10,6 +10,7 @@ const eqArrays = (first, second) => {
   }
   return true;
 };
+
 const assertArraysEqual = (first, second) => {
   let txt = "";
   if (eqArrays(first, second)) {
@@ -22,10 +23,7 @@ const assertArraysEqual = (first, second) => {
   return assertArraysEqual;
 };
 
-// TEST CODE
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+module.exports = assertArraysEqual;
+
+
     
