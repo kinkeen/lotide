@@ -19,10 +19,10 @@ const eqArrays = (first, second) => {
    
    let txt = "";
    if (eqObjects(actual, expected)) {
-     txt = 'Assertion Passed: ' + actual + " === " + expected;
+     txt = '✅✅✅  Assertion Passed: ' + actual + " === " + expected;
      console.log(txt);
    } else {
-     txt = 'Assertion Failed: ' + actual + " === " + expected;
+     txt = ' 🛑🛑🛑 Assertion Failed: ' + actual + " === " + expected;
      console.log(txt);
    }
    return assertObjectsEqual;

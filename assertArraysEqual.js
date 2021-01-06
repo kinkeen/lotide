@@ -14,10 +14,10 @@ const eqArrays = (first, second) => {
 const assertArraysEqual = (first, second) => {
   let txt = "";
   if (eqArrays(first, second)) {
-    txt = 'Assertion Passed: ' + first + " === " + second;
+    txt = '✅✅✅  Assertion Passed: ' + first + " === " + second;
     console.log(txt);
   } else {
-    txt = 'Assertion Failed: ' + first + " === " + second;
+    txt = '🛑🛑🛑 Assertion Failed: ' + first + " === " + second;
     console.log(txt);
   }
   return assertArraysEqual;

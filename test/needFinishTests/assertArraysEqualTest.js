@@ -1,6 +1,6 @@
 
 const assert = require("chai").assert;
-const assertArraysEqual = require("../../assertArraysEqual.js");
+const assertArraysEqual = require("../assertArraysEqual.js");
 
 describe("#assertArraysEqual", () => {
 

@@ -1,6 +1,6 @@
 
 const assert = require("chai").assert;
-const assertEqualTest = require("../assertEqualTest.js");
+const assertEqualTest = require("../assertEqual.js");
 
 describe("#assertEqualTest", () => {
 
