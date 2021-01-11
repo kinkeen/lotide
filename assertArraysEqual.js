@@ -1,5 +1,6 @@
 // FUNCTION IMPLEMENTATION
-const eqArrays = (first, second) => {
+
+/*const eqArrays = (first, second) => {
   if (first.length !== second.length) {
     return false;
   }
@@ -9,16 +10,16 @@ const eqArrays = (first, second) => {
     }
   }
   return true;
-};
+};*/
+
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = (first, second) => {
   let txt = "";
   if (eqArrays(first, second)) {
-    txt = '✅✅✅  Assertion Passed: ' + first + " === " + second;
-    console.log(txt);
+    console.log(`✅ ✅ ✅ Assertion Passed: ${first} === ${second}`);
   } else {
-    txt = '🛑🛑🛑 Assertion Failed: ' + first + " === " + second;
-    console.log(txt);
+    console.log(`❌ ❌ ❌ Assertion Failed: ${first} !== ${second}`);
   }
   return assertArraysEqual;
 };

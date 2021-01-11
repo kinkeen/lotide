@@ -1,5 +1,7 @@
-const eqObjects = function(first, second) {
+const eqArrays = require('./eqArrays');
 
+const eqObjects = function(first, second) {
+  
   if (first.isArray && second.isArray) {
     eqArrays(first, second);
   } else { 

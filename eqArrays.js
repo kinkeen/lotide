@@ -1,7 +1,6 @@
 // FUNCTION IMPLEMENTATION
 const eqArrays = (first, second) => {
   if (first.length !== second.length) {
-    console.log("1");
     return false;
   }
   for(let i = 0; i < first.length; i++) {
